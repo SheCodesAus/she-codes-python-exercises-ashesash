@@ -30,7 +30,7 @@ if how_much_spent < budget:
 
 while how_much_spent < budget:
     how_much_spent += buy_stuff()
-    print(f"total spent: {how how_much_spent}")
+    print(f"total spent: {how_much_spent}")
 
     input("-----")
 

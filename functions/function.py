@@ -6,5 +6,10 @@
 
 # print(far_to_cel(float(input("enter temp: "))))
 
-#q2
+#q4
 
+def price(price_unit, num_units):
+    price_total = price_unit * num_units
+    return price_total
+
+print(price(float(input("enter price per unit: ")), float(input("enter number of units: "))))

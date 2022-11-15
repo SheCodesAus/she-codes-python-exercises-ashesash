@@ -8,18 +8,21 @@ import csv
 #         print(row[2])
 
 #q2
-# with open("colours_20_simple.csv") as colours_csv:
-#     colours_csv_reader = csv.reader(colours_csv)
-#     header = next(colours_csv_reader)
+with open("colours_20_simple.csv") as colours_csv:
+    colours_csv_reader = csv.reader(colours_csv)
+    header = next(colours_csv_reader)
+#method1
     # for row in colours_csv_reader:
     #     print(f"{row[2]}, Hex: {row[1]}, RGB: {row[0]}")
-
-#     casted_colours_list = list(colours_csv_reader)
-#     print(casted_colours_list)
-
-#     for row in colours_csv_reader:
-#         print(f"{row[2]}, Hex: {row[1]}, RGB: {row[0]}")
-#         colours_list.append(row)
+#method2
+    # casted_colours_list = list(colours_csv_reader)
+    # print(casted_colours_list)
+#method3
+    colours_list = []
+    for row in colours_csv_reader:
+        # print(f"{row[2]}, Hex: {row[1]}, RGB: {row[0]}")
+        colours_list.append(row)
+    print(colours_list)
 
 #question 4
 #red, green, blue, yellow

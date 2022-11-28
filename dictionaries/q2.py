@@ -21,6 +21,14 @@ colours = [
     "green"
 ]
 
+#dictionary comprehension
+# colour_counts = {x: colours.count(x) for x in colours}
+# print(colour_counts)
+
+for colour in colour_counts:
+    colour_counts = colours.count(colour)
+    print(f" {colour}: {colour_counts}")
+
 # colours = [
 #     "orange",
 #     "purple",

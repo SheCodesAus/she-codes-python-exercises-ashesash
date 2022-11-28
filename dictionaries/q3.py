@@ -7,6 +7,11 @@ names = [
     "Samara", "Sasha", "Sophie", "Teagen", "Viv"
 ]
 
+# name_count = {}
+for name in names:
+    name_count = names.count(name)
+    print(f"{name}: {name_count}")
+
 # names = [
 #     "Miranda", "Sophie", "Emily", "Taylor", "Anne",
 #     "Djuarli", "Anika", "Rosie", "Miranda", "Taylor",

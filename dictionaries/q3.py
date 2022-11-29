@@ -7,14 +7,23 @@ names = [
     "Samara", "Sasha", "Sophie", "Teagen", "Viv"
 ]
 
-# name_count = {}
-for name in names:
-    name_count = names.count(name)
-    print(f"{name}: {name_count}")
-
 # names = [
 #     "Miranda", "Sophie", "Emily", "Taylor", "Anne",
 #     "Djuarli", "Anika", "Rosie", "Miranda", "Taylor",
 #     "Abby", "Sarah", "Teagen", "Abby", "Abby",
 #     "Maddie", "Miranda", "Rosie"
 # ]
+
+unique = list()
+name_count = {}
+
+# for name in names:
+#     if name not in unique:
+#         unique.append(name)
+#         name_count = names.count(name)
+#     print(f"{unique} : {name_count}")
+
+for name in range(len(names)):
+    name_count[names[name]] = names.count(names[name])
+
+print(name_count)
